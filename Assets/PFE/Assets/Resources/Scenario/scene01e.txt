@@ -1,0 +1,13 @@
+define:
+    $picto1 = 1
+    #autres pictogrammes...
+    $porteAccesLocal = 2
+
+
+tasks without order:
+    check $picto1
+    #check ...
+
+when success:
+    open $porteAccesLocal
+    print "Félicitations !" with confirmation

@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 27e0c65ef656aaf46b2f5c4b775de85e
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 00000000010000000200000003000000
+  assetHash:
+    serializedVersion: 2
+    Hash: db11771133ba678e686f24efb6604ba4
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 133.49147, y: 54.626373, z: 78.85551}
+      lookAt: {x: 113.23789, y: -44.888695, z: 31.797132}
+      up: {x: -0.3514885, y: 0.45771983, z: -0.8166691}
+      fov: 98.977196
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Stacy
+    100002: //RootNode
+    400000: Stacy
+    400002: //RootNode
+    2100000: _defaultMat
+    2100002: '[Color H08]'
+    2100004: '[Translucent Glass Blue]'
+    2100006: '[Color M07]'
+    2100008: '[Tile Limestone Large]'
+    2100010: '[Color E05]'
+    2100012: '[Color G02]'
+    2100014: '[Color G08]'
+    2100016: '[Color M09]'
+    2100018: '[Color M00]'
+    2100020: '[Color I08]'
+    2100022: '[Tile Ceramic Natural]'
+    2100024: '[Aluminum]'
+    2100026: '[Metal Steel Textured White]'
+    2100028: '[Color G03]'
+    2100030: '[Color B05]'
+    2100032: '[Square Glass Tile 04]'
+    2100034: '[Color M08]'
+    2100036: Stacy_Skin
+    2100038: Stacy_Shirt
+    2100040: Stacy_Shoe
+    2100042: Stacy_Shoe_Laces_Sole
+    2100044: Stacy_Hair
+    2100046: Stacy_Pants
+    2300000: Stacy
+    2300002: //RootNode
+    3300000: Stacy
+    3300002: //RootNode
+    4300000: Mesh ZC2
+    4300002: Mesh Stacy
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

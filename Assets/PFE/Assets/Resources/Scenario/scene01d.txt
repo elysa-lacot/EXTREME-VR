@@ -1,0 +1,41 @@
+define:
+    $nappesVinyles = 1
+    $bacRetention = 2
+    $bidon = 3
+    $adhesif = 4
+    $sacDechets = 5
+    $feutre = 6
+    $filtreNeuf = 7
+    $chiffonnettes = 8
+    $papierFrottis = 9
+    $baliseAerosols = 10
+
+when firsttry:
+    freeze user
+    print "Présentation liste matériel pour intervention : ..." with confirmation
+    unfreeze user
+
+tasks without order:
+    take $nappesVinyles
+    take $nappesVinyles
+    take $nappesVinyles
+    take $bacRetention
+    take $bidon
+    take $adhesif
+    take $sacDechets
+    take $sacDechets
+    take $feutre
+    take $filtreNeuf
+    take $chiffonnettes
+    take $papierFrottis
+    take $baliseAerosols
+
+when success:
+    freeze user
+    print "Choix d'équipement correcte !" for 3s
+    load scene01e
+
+when fail:
+    freeze user
+    print "Choix d'équipement incorrecte !" for 3s
+    restart

@@ -1,0 +1,17 @@
+define:
+    $testBatterie = 1
+    $contaminametre = 2
+    $radiametre = 3
+
+tasks without order:
+    check $testBatterie
+    check $contaminametre
+    check $radiametre
+
+when success:
+    print "Vérifications OK" for 3s
+    load scene01d
+
+when fail:
+    print "Vérifications manquantes" for 3s
+

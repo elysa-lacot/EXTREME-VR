@@ -1,0 +1,32 @@
+#test commentaire
+define:
+    $tshirt = T-shirt
+    $tenueCirculation = Combinaison
+    $chaussettes = Chaussettes
+    $chaussuresTravail = Chaussures
+    $dosimetreActif = DosiMActif
+    $dosimetrePassif = DosiMPassif
+
+when firsttry:
+    #freeze user
+    print "Liste complète de vêtement : ..." with confirmation
+    #unfreeze user
+
+tasks without order:
+    strict take
+    take $tshirt
+    take $tenueCirculation
+    take $chaussuresTravail
+    take $dosimetreActif
+    take $dosimetrePassif
+    wait for validation
+
+when success:
+    #freeze user
+    print "Choix d'équipement correcte !" for 3s
+    load scene01b
+
+when fail:
+    #freeze user
+    print "Choix d'équipement incorrecte !" for 3s
+    #restart

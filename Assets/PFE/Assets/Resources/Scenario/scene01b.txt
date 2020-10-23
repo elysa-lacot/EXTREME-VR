@@ -1,0 +1,44 @@
+define:
+    $masque = 1
+    $cartouche = 2
+    $tenueTyvek = 3
+    $pairesGants = 4
+    $pairesSurbottes = 5
+    $adhesifEtancheite = 6
+    $contaminametre = 7
+    $radiametre = 8
+
+when firsttry:
+    #freeze user
+    #print "Checkbox is not implemented yet. Next instruction will not work" with confirmation
+    checkbox strict "L'intervention comprend elle un risque" "D'exposition externe uniquement" "D'exposition interne uniquement" "D'exposition interne et externe":
+        case 3:
+            print "Bonne réponse !" with confirmation
+        else:
+            print "Mauvaise réponse !" for 3s
+            reask
+    print "Liste complète de la surtenue : ..." with confirmation
+    #unfreeze user
+
+tasks without order:
+    take $masque
+    take $cartouche
+    take $tenueTyvek
+    take $pairesGants
+    take $pairesGants
+    take $pairesSurbottes
+    take $pairesSurbottes
+    take $adhesifEtancheite
+    take $contaminametre
+    take $radiametre
+    wait for validation
+
+when success:
+    freeze user
+    print "Choix d'équipement correcte !" for 3s
+    load scene01c
+
+when fail:
+    freeze user
+    print "Choix d'équipement incorrecte !" for 3s
+    restart
