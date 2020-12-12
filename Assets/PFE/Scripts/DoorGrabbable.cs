@@ -10,14 +10,12 @@ public class DoorGrabbable : OVRGrabbable
     public GameObject door ;
     public Transform handler ;
     public float forceReleaseDistance = 0.7f ;
-
-    
+   
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
         base.GrabBegin(hand, grabPoint) ;
 
         // Don't detect collision between Player and the Door
-        // door.layer = 17 ;
         door.GetComponent<BoxCollider>().enabled = false ;
     }
 
@@ -28,16 +26,12 @@ public class DoorGrabbable : OVRGrabbable
     	transform.rotation = handler.transform.rotation ;
 
         // Detect between the Player and the Door
-        // door.layer = 16 ;
         door.GetComponent<BoxCollider>().enabled = true ;
 
     	// The door won't move when we'll release it
     	Rigidbody rbHandler = handler.GetComponent<Rigidbody>() ;
     	rbHandler.velocity = Vector3.zero ;
     	rbHandler.angularVelocity = Vector3.zero ;
-
-        
-
     }
 
     private void Update()
