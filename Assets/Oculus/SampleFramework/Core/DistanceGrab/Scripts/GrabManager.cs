@@ -51,10 +51,11 @@ namespace OculusSampleFramework
 
         public Color OutlineColorInRange;
         public Color OutlineColorHighlighted;
+        public Color OutlineColorOutOfRange;
 
         void OnTriggerEnter(Collider otherCollider)
         {
-            DistanceGrabbable dg = otherCollider.GetComponentInParent<DistanceGrabbable>();
+            DistanceGrabbable dg = otherCollider.GetComponentInChildren<DistanceGrabbable>();
             if(dg)
             {
                 dg.InRange = true;
@@ -64,7 +65,7 @@ namespace OculusSampleFramework
         
         void OnTriggerExit(Collider otherCollider)
         {
-            DistanceGrabbable dg = otherCollider.GetComponentInParent<DistanceGrabbable>();
+            DistanceGrabbable dg = otherCollider.GetComponentInChildren<DistanceGrabbable>();
             if(dg)
             {
                 dg.InRange = false;
