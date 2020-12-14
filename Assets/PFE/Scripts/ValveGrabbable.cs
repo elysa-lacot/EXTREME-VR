@@ -8,7 +8,7 @@ using UnityEngine;
 public class ValveGrabbable : OVRGrabbable
 {
     public Transform handler ;
-    public float forceReleaseDistance = 0.3f ;
+    public float forceReleaseDistance = 0.5f ;
 
     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
     {
