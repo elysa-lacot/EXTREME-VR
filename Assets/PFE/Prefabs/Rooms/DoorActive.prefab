@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8498162747077106482}
   - component: {fileID: 3153501953288618041}
   - component: {fileID: 390977773556442914}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HandlerBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 5662718190067738611}
   - component: {fileID: 5662718190067738613}
   - component: {fileID: 5662718190067738610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CloserHingeDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 5662718190396284321}
   - component: {fileID: 5662718190396284382}
   - component: {fileID: 5662718190396284322}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HandlerFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5662718190424102552}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DoorActive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 5662718190688581583}
   - component: {fileID: 5662718190688581585}
   - component: {fileID: 5662718190688581582}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CloserHingeFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -733,7 +733,7 @@ GameObject:
   - component: {fileID: 5662718190754285746}
   - component: {fileID: 5662718190754285748}
   - component: {fileID: 5662718190754285749}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CloserFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 5662718191172423710}
   - component: {fileID: 5662718191172427744}
   - component: {fileID: 5662718191172427745}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 5662718191505882549}
   - component: {fileID: 5662718191505882551}
   - component: {fileID: 5662718191505882548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FloorPlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 5662718191580722323}
   - component: {fileID: 5662718191580722322}
   - component: {fileID: 5662718191580722327}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.00001, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.1152236, y: 1.259906, z: 4.1235127}
+  m_ConnectedAnchor: {x: -1.1154397, y: 1.2539309, z: 6.7095127}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1127,7 +1127,7 @@ GameObject:
   - component: {fileID: 5662718191715226457}
   - component: {fileID: 5662718191715226459}
   - component: {fileID: 5662718191715226456}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CloserDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1208,7 +1208,7 @@ GameObject:
   - component: {fileID: 5662718191743442671}
   - component: {fileID: 5662718191743442673}
   - component: {fileID: 5662718191743442670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Striker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,8 +1289,7 @@ GameObject:
   - component: {fileID: 5662718192002757889}
   - component: {fileID: 5662718192002757890}
   - component: {fileID: 5662718192002757891}
-  - component: {fileID: 5662718192002757888}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1360,16 +1359,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5662718192002757888
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5662718192002757950}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0015094848, y: 0.0012643505, z: 0.00066675}
-  m_Center: {x: 0.000057298603, y: 0.0002988003, z: 1.4551915e-11}

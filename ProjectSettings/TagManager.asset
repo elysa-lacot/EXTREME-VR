@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Explosive
   - Bullet
+  - Hand_R
+  - Button_Show_UI
+  - UI_Button
+  - Button_Trigger_UI
   layers:
   - Default
   - TransparentFX
@@ -20,7 +24,7 @@ TagManager:
   - Door
   - Hand
   - GrabbableHandler
-  - 
+  - Menu
   - 
   - 
   - 

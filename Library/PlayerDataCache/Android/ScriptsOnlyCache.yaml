@@ -38,8 +38,6 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
-    Unity.XR.Oculus.Editor.dll:
-    - Unity.XR.Oculus.Editor.OculusSettingsEditor
     Unity.XR.Oculus.dll:
     - Unity.XR.Oculus.OculusLoader
     - Unity.XR.Oculus.OculusSettings
@@ -112,75 +110,75 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12000}
+      Script: {instanceID: 12034}
     - Class: 114
-      Script: {instanceID: 12006}
+      Script: {instanceID: 12038}
     - Class: 114
-      Script: {instanceID: 12010}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 12012}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12014}
+      Script: {instanceID: 12046}
     - Class: 114
-      Script: {instanceID: 12124}
+      Script: {instanceID: 12160}
     - Class: 114
-      Script: {instanceID: 12296}
+      Script: {instanceID: 12334}
     - Class: 114
-      Script: {instanceID: 12322}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 12532}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12510}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 12580}
     - Class: 114
-      Script: {instanceID: 13222}
+      Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13404}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13556}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13562}
+      Script: {instanceID: 13452}
     - Class: 114
-      Script: {instanceID: 13608}
+      Script: {instanceID: 13606}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13612}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13658}
     - Class: 114
-      Script: {instanceID: 13874}
+      Script: {instanceID: 13708}
     - Class: 114
-      Script: {instanceID: 14128}
+      Script: {instanceID: 13800}
     - Class: 114
-      Script: {instanceID: 14206}
+      Script: {instanceID: 13926}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 14182}
     - Class: 114
-      Script: {instanceID: 14230}
+      Script: {instanceID: 14260}
     - Class: 114
-      Script: {instanceID: 14544}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 14636}
+      Script: {instanceID: 14284}
     - Class: 114
-      Script: {instanceID: 14680}
+      Script: {instanceID: 14308}
     - Class: 114
-      Script: {instanceID: 14770}
+      Script: {instanceID: 14398}
     - Class: 114
-      Script: {instanceID: 14790}
+      Script: {instanceID: 14604}
     - Class: 114
-      Script: {instanceID: 14890}
+      Script: {instanceID: 14698}
     - Class: 114
-      Script: {instanceID: 15230}
+      Script: {instanceID: 14742}
     - Class: 114
-      Script: {instanceID: 15250}
+      Script: {instanceID: 14834}
     - Class: 114
-      Script: {instanceID: 24276}
+      Script: {instanceID: 14854}
     - Class: 114
-      Script: {instanceID: 24278}
+      Script: {instanceID: 14954}
     - Class: 114
-      Script: {instanceID: 24280}
+      Script: {instanceID: 15294}
     - Class: 114
-      Script: {instanceID: 52226}
+      Script: {instanceID: 15314}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -220,12 +218,6 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 0c05f2bfb402def3f0a85a62a2323c7f
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
-  - hash:
-      serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -260,6 +252,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 0c05f2bfb402def3f0a85a62a2323c7f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -344,6 +342,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -490,6 +494,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: e58d4fa27a7ea3ffd9934bb9557b2066
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UI_Button_Handler
+  - hash:
+      serializedVersion: 2
       Hash: 36ccc3f277b18fdde062df41fe090e53
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -512,6 +522,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrBoardGame
     className: BoardPosition
+  - hash:
+      serializedVersion: 2
+      Hash: ff0d1a172bcaccb0d48ffdc8304ea2a6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: trigger_button
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -944,12 +960,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TeleportOrientationHandlerHMD
-  - hash:
-      serializedVersion: 2
-      Hash: b3ab2106268377ffe25dd18ac23dca28
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_Asset
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1432,7 +1442,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 0b72c8cb307a829156936043ce529602
+      Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Settings
@@ -1471,6 +1481,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: AddEquipmentScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: OvrAvatarSettingsEditor
   - hash:
       serializedVersion: 2
@@ -1502,6 +1518,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
     className: PlayerArea
+  - hash:
+      serializedVersion: 2
+      Hash: 5820c89fe420af47af4ba6d53650fd27
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: XtremWatchShow
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1546,7 +1568,7 @@ ScriptsOnlyBuild:
     className: ONSPPropagationMaterial
   - hash:
       serializedVersion: 2
-      Hash: e4aac510b698bae77a5dbde189fe88e5
+      Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
@@ -1582,6 +1604,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 739eb7f23d4daebef4f2ff2da573a75e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: XtremWatchButton
+  - hash:
+      serializedVersion: 2
       Hash: ce638e2dcac0548a4a3e456d5051c131
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
@@ -1600,7 +1628,7 @@ ScriptsOnlyBuild:
     className: OVRGridCube
   - hash:
       serializedVersion: 2
-      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+      Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
@@ -1726,7 +1754,7 @@ ScriptsOnlyBuild:
     className: TrainLocomotive
   - hash:
       serializedVersion: 2
-      Hash: a01d7cd1372d550f912f7121e6ebe739
+      Hash: a2612813f45d0ced02c3e4bc9dbea8b4
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
@@ -1804,7 +1832,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 8649814970b42d345b89944b862453cc
+      Hash: 5dea360fb0b147724ac344e6f399c2f3
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
@@ -1822,7 +1850,7 @@ ScriptsOnlyBuild:
     className: XRManagerSettings
   - hash:
       serializedVersion: 2
-      Hash: c60c5cba0d5ed4f4a018240d6339217f
+      Hash: f1d735cc1a21c3704ab52568f4fbfcf8
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -1922,37 +1950,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: e58d4fa27a7ea3ffd9934bb9557b2066
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UI_Button_Handler
-  - hash:
-      serializedVersion: 2
-      Hash: ff0d1a172bcaccb0d48ffdc8304ea2a6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: trigger_button
-  - hash:
-      serializedVersion: 2
-      Hash: 5820c89fe420af47af4ba6d53650fd27
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: XtremWatchShow
-  - hash:
-      serializedVersion: 2
-      Hash: 739eb7f23d4daebef4f2ff2da573a75e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: XtremWatchButton
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AddEquipmentScript
   platform: 13
   scenePathNames:
   - Assets/PFE/Scenes/Scene02.unity
-  playerPath: /Users/lionelcordas/PFE_ExtremVR/lionel-test1.apk
+  playerPath: /Users/ELYSA/Documents/Unity Projects/PFE-Polytech/Test_2020-12-16.apk
