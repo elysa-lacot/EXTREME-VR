@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1189767062555597818}
   - component: {fileID: 3991897494627217200}
   m_Layer: 0
-  m_Name: test
+  m_Name: Locker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 6d819884d1d8f4a07a9756bc9774a549, type: 3}
+  - {fileID: 2100000, guid: f20908e01751a473faeb47ba22729713, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
