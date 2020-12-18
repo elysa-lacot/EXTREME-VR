@@ -10,7 +10,7 @@ define:
 
 when firsttry:
     #freeze user
-    #print "Checkbox is not implemented yet. Next instruction will not work" with confirmation
+    print "Checkbox is not implemented yet. Next instruction will not work" with confirmation
     checkbox strict "L'intervention comprend elle un risque" "D'exposition externe uniquement" "D'exposition interne uniquement" "D'exposition interne et externe":
         case 3:
             print "Bonne réponse !" with confirmation

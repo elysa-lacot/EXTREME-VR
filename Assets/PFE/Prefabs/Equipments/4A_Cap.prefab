@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7591624186908530680}
   - component: {fileID: -2824739635227912684}
   - component: {fileID: 7591624186908530681}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4A_Cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

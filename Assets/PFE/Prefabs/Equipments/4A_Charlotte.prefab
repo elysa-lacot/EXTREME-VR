@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2428261008998348155}
   - component: {fileID: 209180327393363360}
   - component: {fileID: 209180328102474177}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4A_Charlotte
   m_TagString: Untagged
   m_Icon: {fileID: 0}

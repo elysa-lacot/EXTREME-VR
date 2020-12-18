@@ -10,6 +10,12 @@ TagManager:
   - Button_Show_UI
   - UI_Button
   - Button_Trigger_UI
+  - T-shirt
+  - Combinaison
+  - Chaussettes
+  - Chaussures
+  - DosiMActif
+  - DosiMPassif
   layers:
   - Default
   - TransparentFX

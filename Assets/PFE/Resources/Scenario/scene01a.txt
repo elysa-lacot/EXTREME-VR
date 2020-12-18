@@ -1,4 +1,6 @@
 #test commentaire
+config:
+    unityScene = DefaultScene
 define:
     $tshirt = T-shirt
     $tenueCirculation = Combinaison
@@ -15,10 +17,10 @@ when firsttry:
 tasks without order:
     strict take
     take $tshirt
-    take $tenueCirculation
+    #take $tenueCirculation
     take $chaussuresTravail
-    take $dosimetreActif
-    take $dosimetrePassif
+    #take $dosimetreActif
+    #take $dosimetrePassif
     wait for validation
 
 when success:
