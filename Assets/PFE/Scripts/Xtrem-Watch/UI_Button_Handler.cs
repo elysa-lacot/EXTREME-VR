@@ -1,15 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ExtremeVR;
 
-public class UI_Button_Handler : MonoBehaviour
+namespace ExtremeVR{
+
+class UI_Button_Handler : MonoBehaviour
 {
     public GameObject buttonUp;
     public GameObject buttonDown;
     public GameObject buttonDelete;
     public GameObject selector;
     public AudioClip audio_click;
-
+    public CollectObjects collector; 
     private RectTransform myRectTransform;
     private AudioSource audioSource;
     // Start is called before the first frame update
@@ -32,16 +35,19 @@ public class UI_Button_Handler : MonoBehaviour
             if (other.name.Contains("CubeButtonUp"))
             {
                 buttonUp.transform.localScale *= 1.2f;
-                
+                collector.UpdateIndex(collector.index -1);
             }
             if (other.name.Contains("CubeButtonDown"))
             {
                 buttonDown.transform.localScale *= 1.2f;
+                collector.UpdateIndex(collector.index +1);
 
             }
             if (other.name.Contains("CubeButtonDelete"))
             {
                 buttonDelete.transform.localScale *= 1.2f;
+                //CollectObjects.DeleteFromList()
+                collector.DropSelectedObject();
 
             }
             audioSource.PlayOneShot(audio_click);
@@ -67,8 +73,11 @@ public class UI_Button_Handler : MonoBehaviour
             {
                 buttonDelete.transform.localScale /= 1.2f;
                 //selector.transform.localScale *= 1.1f;
+
+
             }
 
         }
     }
+}
 }

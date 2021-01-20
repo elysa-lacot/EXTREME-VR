@@ -11,8 +11,8 @@ namespace ExtremeVR
 
     class FileTools
     {
-        public const string FILE_EXTENSION = "";
-        public const string SCENE_FOLDER = "Scenario/";
+        public const string FILE_EXTENSION = ".txt";
+        public const string SCENE_FOLDER = "/mnt/sdcard/scenario/";
         public static readonly List<String> FUNCT_NAME = new List<String>() {"define:","tasks","when","config:"};
         private static int _currentTabNumber;
         private static Dictionary<String,String> _constantDict;
@@ -32,12 +32,12 @@ namespace ExtremeVR
             _constantDict = new Dictionary<string, string>();
             int state = -1;
             Debug.Log("Load " + SCENE_FOLDER + file);
-            TextAsset scenario = (TextAsset)Resources.Load(SCENE_FOLDER + file, typeof(TextAsset));
+            //TextAsset scenario = (TextAsset)Resources.Load(SCENE_FOLDER + file, typeof(TextAsset));
             //Debug.Log("Is null ? " + scenario.text == null);
             //Debug.Log(scenario.text);
             //byte[] byteArray = Encoding.ASCII.GetBytes( scenario );
-            MemoryStream stream = new MemoryStream( scenario.bytes );
-            _sr = new StreamReader(stream);
+            //MemoryStream stream = new MemoryStream( scenario.bytes );
+            _sr = new StreamReader(SCENE_FOLDER + file + FILE_EXTENSION);
             Debug.Log("SR Loaded");
             string line;
 

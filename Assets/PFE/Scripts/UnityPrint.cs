@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 using System.Linq;
 
@@ -9,36 +10,39 @@ namespace ExtremeVR
 
     class UnityPrint : MonoBehaviour, IPrintable
     {
-        public Text notifText;
-        public Text confirmationText;
+        public TextMeshProUGUI notifText;
+        public TextMeshProUGUI confirmationText;
         public double remainingTime;
         public Camera MainCamera;
         private bool isWaitingText = false;
-        public SimulContext simul;
+        public SimulContext simul= null;
         //For checkbox
         private bool _isWaitingForAnswser = false;
         public bool IsWaitingForAnswer() { return _isWaitingForAnswser; }
 
         public void Update()
         {
-            if(isWaitingText)
+            if (simul)
             {
-                if((remainingTime-=Time.deltaTime) < 0)
+                if (isWaitingText)
                 {
-                    notifText.text = "";
-                    isWaitingText = false;
-                    simul.SignalUserInput();
-                }
-            }
-            else if(confirmationText.text != null)
-                if(confirmationText.text != "")
-                {
-                    if(Input.GetButtonDown("Submit"))
+                    if ((remainingTime -= Time.deltaTime) < 0)
                     {
-                        confirmationText.text = "";
+                        notifText.text = "";
+                        isWaitingText = false;
                         simul.SignalUserInput();
                     }
                 }
+                else if (confirmationText.text != null)
+                    if (confirmationText.text != "")
+                    {
+                        if (Input.GetButtonDown("Submit"))
+                        {
+                            confirmationText.text = "";
+                            simul.SignalUserInput();
+                        }
+                    }
+            }
         }
         
         public void PrintToUser(String text, int type, double time = -1)
@@ -46,7 +50,7 @@ namespace ExtremeVR
             if((type & PrintType.WITH_CONFIRMATION) == PrintType.WITH_CONFIRMATION)
             {
                 Debug.Log(text + "\nPress Enter to continue");
-                if(notifText != null) confirmationText.text = text + "\nPress Enter to continue";
+                if(confirmationText != null) confirmationText.text = text + "\nPress Enter to continue";
                 else Debug.Log("NotifText = null !");
                 //Console.ReadKey();
                 Debug.Log("Confirmation");

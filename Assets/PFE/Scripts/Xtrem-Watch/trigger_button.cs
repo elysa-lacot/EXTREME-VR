@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ExtremeVR;
+
+namespace ExtremeVR{
 
 public class trigger_button : MonoBehaviour
 {
@@ -44,14 +47,17 @@ public class trigger_button : MonoBehaviour
                 isPressed = true;   
                 watch_zone.GetComponent<Renderer>().material = mat_is_watching;
                 audioSource.PlayOneShot(audio_activate);
+                CollectObjects.isNotifOn = true;
             }
             else
             {
                 isPressed = false;
                 watch_zone.GetComponent<Renderer>().material = mat_not_watching;
                 audioSource.PlayOneShot(audio_desactivate);
+                CollectObjects.isNotifOn = false;
             }
 
         }
     }
+}
 }

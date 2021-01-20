@@ -20,6 +20,17 @@ namespace ExtremeVR
 
         public static IEnumerator LoadScene()
         {
+            GameObject Player = PlayerSingleton.GetInstance();
+            float gravity = 0;
+
+            /*
+            AsyncOperation asyncLoad;
+            asyncLoad = SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Single);
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
+            */
             UnityEngine.SceneManagement.Scene unityScene;
             UnityEngine.SceneManagement.Scene currentScene = SceneManager.GetActiveScene();
             SimulContext sc = null;
@@ -36,9 +47,13 @@ namespace ExtremeVR
                 GameObject[] currentObj = currentScene.GetRootGameObjects();
                 for(int i = 0;i<currentObj.Length;i++)
                 {
-                    if(currentObj[i].GetComponent(typeof(SimulContext)) == null && currentObj[i].GetComponent(typeof(MainMenu)) == null)
-                        currentObj[i].SetActive(false);
+                    if(currentObj[i].GetComponent(typeof(SimulContext)) == null && currentObj[i].GetComponent(typeof(MainMenu)) == null && currentObj[i].GetComponent(typeof(OVRCameraRig)) == null && currentObj[i].GetComponent(typeof(OVRPlayerController)) == null)
+                        currentObj[i].SetActive(false);                   
                 }
+
+                gravity = Player.GetComponent<OVRPlayerController>().GravityModifier;
+                Player.GetComponent<OVRPlayerController>().GravityModifier = 0;
+
                 AsyncOperation asyncLoad;
                 asyncLoad = SceneManager.LoadSceneAsync(extremeVRScene.UnityScene,LoadSceneMode.Additive);
 
@@ -61,6 +76,7 @@ namespace ExtremeVR
                 {
                     sc = gameObj[i].GetComponent(typeof(SimulContext)) as SimulContext;
                     sc.LoadScene(extremeVRScene);
+                    PlayerSingleton.GetInstance().GetComponentInChildren<ExtremeVR.CollectObjects>().SetSimulContext(sc);
                 }
             }
             foreach (Scene.ObjectOptions ob in sc.CurrentScene.ObjOptions)
@@ -83,8 +99,9 @@ namespace ExtremeVR
             }
             Debug.Log("CONFIGURED");
 
-            if(currentScene.name != extremeVRScene.UnityScene) SceneManager.UnloadSceneAsync(currentScene);
-
+            Player.GetComponent<OVRPlayerController>().GravityModifier = gravity;
+            if (currentScene.name != extremeVRScene.UnityScene) SceneManager.UnloadSceneAsync(currentScene);
+           
             yield break;
         }
     }

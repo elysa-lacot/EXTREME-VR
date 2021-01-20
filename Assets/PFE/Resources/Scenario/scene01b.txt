@@ -1,3 +1,4 @@
+
 define:
     $masque = 1
     $cartouche = 2

@@ -36,6 +36,7 @@ namespace ExtremeVR
         private bool _isRunning = false;
         public bool DebugMode = false;
         private List<string> _objInventory;
+       
 
 
         void Awake()
@@ -44,13 +45,15 @@ namespace ExtremeVR
             //LoadScene(ScenarioFile);
             //Run();
             _audiosource = GetComponent<AudioSource>();
+            printable = PlayerSingleton.GetInstance().GetComponentInChildren<UnityPrint>();
+            printable.simul = this;
         }
 
         void Start()
         {
             if(ScenarioFile != "" && DebugMode)
             {
-                //LoadScene(ScenarioFile);
+                LoadScene(ScenarioFile);
             }
             else
             {
@@ -70,6 +73,11 @@ namespace ExtremeVR
                     _objectdropped = false;
                 }
             }
+            if (Input.GetButtonDown("Fire3"))
+            {
+                Validate();
+            }
+
         }
 
         public void Run()
@@ -105,11 +113,11 @@ namespace ExtremeVR
                 UnityEngine.Debug.Log("ça passe le if");
                 _s.TakeObject(objTag);
                 _objInventory.Add(objName);
-                _inactiveObjects.Add(objName,GameObject.Find(objName));
-                GameObject.Find(objName).SetActive(false);
+                //_inactiveObjects.Add(objName,GameObject.Find(objName));
+                //GameObject.Find(objName).SetActive(false);
                 printable.PrintToUser(objName + " pris !",PrintType.WITH_TIMEOUT,3);
                 inventoryListText.text += objName + "\n";
-                Dom.CreateNewObject(objName);
+                //Dom.CreateNewObject(objName);
             }
         }
 
@@ -124,8 +132,8 @@ namespace ExtremeVR
                 UnityEngine.Debug.Log(objName);
                 _objInventory.Remove(objName);
             //GameObject.Find(name).SetActive(true);
-                _inactiveObjects[objName].SetActive(true);
-                _inactiveObjects.Remove(objName);
+                //_inactiveObjects[objName].SetActive(true);
+                //_inactiveObjects.Remove(objName);
                 printable.PrintToUser(objName + " enlevé !", PrintType.WITH_TIMEOUT, 3);
                 _objectdropped = true;
             }

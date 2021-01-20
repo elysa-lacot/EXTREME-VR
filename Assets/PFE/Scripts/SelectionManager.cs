@@ -13,13 +13,14 @@ namespace ExtremeVR
         // Start is called before the first frame update
         public const int GRABBABLE_LAYER = 9;
         public Button selectButton;
-        public SimulContext simc;
+        public SimulContext simc = null;
         private Behaviour lastactive;
         //private List<String> _ignored_objects;
         public GameObject Player;
 
         void Start()
         {
+            simc = null;
             //_ignored_objects = new List<String>();
             //_ignored_objects.Add("Floor");
             //Button btn = selectButton.GetComponent<Button>();
@@ -29,18 +30,22 @@ namespace ExtremeVR
         // Update is called once per frame
         void Update()
         {
-            Debug.Log("IsSFRunning " + simc.IsSceneFunctionRunning);
-            if(!simc.IsSceneFunctionRunning)
+            //Debug.Log("IsSFRunning " + simc.IsSceneFunctionRunning);
+            if (simc!= null)
             {
-                Debug.Log("SCAN//////////////");
-                HoverObject();
-                if (Input.GetMouseButtonDown(0))
+                if (!simc.IsSceneFunctionRunning)
                 {
-                    SelectObject();
-                }
-                else if (Input.GetMouseButtonDown(1))
-                {
-                    Validate();
+                    //Debug.Log("SCAN//////////////");
+                    HoverObject();
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        SelectObject();
+                    }
+                    else if (Input.GetMouseButtonDown(1))
+                    {
+                        Validate();
+                    }
+                    
                 }
             }
         }
