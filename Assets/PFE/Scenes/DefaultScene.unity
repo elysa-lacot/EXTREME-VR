@@ -556,6 +556,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: dosimetre_actif3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_TagString
+      value: DosiMActif
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
 --- !u!4 &164896782 stripped
@@ -623,7 +631,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6150379608720465171, guid: 3f9f3ed7484b5448dbef25f6008b1ead, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6150379608720465171, guid: 3f9f3ed7484b5448dbef25f6008b1ead, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1517,6 +1525,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: dosimetre_passif3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_TagString
+      value: DosiMPassif
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
 --- !u!4 &636499179 stripped
@@ -1534,6 +1550,14 @@ PrefabInstance:
     - target: {fileID: 2793049153167589604, guid: 1df316010b1274dd1ac0c113fa33830d, type: 3}
       propertyPath: m_Name
       value: 4A_Combinaison
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793049153167589604, guid: 1df316010b1274dd1ac0c113fa33830d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793049153167589625, guid: 1df316010b1274dd1ac0c113fa33830d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2793049153167589627, guid: 1df316010b1274dd1ac0c113fa33830d, type: 3}
       propertyPath: m_RootOrder
@@ -1659,6 +1683,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
       propertyPath: m_Name
       value: dosimetre_passif4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_TagString
+      value: DosiMPassif
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
@@ -2015,7 +2047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8749180776331084143, guid: c98150b253372453cac325c8cc0a4eb9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8749180776331084143, guid: c98150b253372453cac325c8cc0a4eb9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2378,7 +2410,7 @@ Transform:
   m_Children:
   - {fileID: 1871364047}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1027871188
 PrefabInstance:
@@ -2595,6 +2627,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
       propertyPath: m_Name
       value: dosimetre_passif1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_TagString
+      value: DosiMPassif
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
@@ -3642,6 +3682,10 @@ PrefabInstance:
       value: Gants
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d86a06f9145edcc42bcceb8eb3a675f1, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d86a06f9145edcc42bcceb8eb3a675f1, type: 3}
       propertyPath: m_TagString
       value: Gants
       objectReference: {fileID: 0}
@@ -3681,6 +3725,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16600358, y: 0.30356967, z: 0.009999999}
   m_Center: {x: 0.04338779, y: -0.094183944, z: 0.00000047473637}
+--- !u!4 &1129171851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d86a06f9145edcc42bcceb8eb3a675f1, type: 3}
+  m_PrefabInstance: {fileID: 1129171847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1129171852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129171848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 1129171851}
+  m_grabPoints: []
 --- !u!1 &1134708252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3864,6 +3930,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03bad1506e00640ab98b8396bc30013c, type: 3}
+--- !u!4 &1183055427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7788950992412820574, guid: 03bad1506e00640ab98b8396bc30013c, type: 3}
+  m_PrefabInstance: {fileID: 1183055426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1183055428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7788950992413186174, guid: 03bad1506e00640ab98b8396bc30013c, type: 3}
+  m_PrefabInstance: {fileID: 1183055426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1183055429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183055428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 1183055427}
+  m_grabPoints: []
 --- !u!1 &1192455350
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,6 +4348,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1855452905}
     m_Modifications:
+    - target: {fileID: 3845667286945961546, guid: dcd19510d1f1642a88bfa02ee7ebe6d0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3845667286948219020, guid: dcd19510d1f1642a88bfa02ee7ebe6d0, type: 3}
       propertyPath: m_Name
       value: 4A_T-shirt01
@@ -4309,6 +4406,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcd19510d1f1642a88bfa02ee7ebe6d0, type: 3}
+--- !u!4 &1269751367 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3845667286948254892, guid: dcd19510d1f1642a88bfa02ee7ebe6d0, type: 3}
+  m_PrefabInstance: {fileID: 1269751366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1269751368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3845667286948219020, guid: dcd19510d1f1642a88bfa02ee7ebe6d0, type: 3}
+  m_PrefabInstance: {fileID: 1269751366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1269751369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269751368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 1269751367}
+  m_grabPoints: []
 --- !u!1001 &1300735507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4461,6 +4585,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
       propertyPath: m_Name
       value: dosimetre_actif1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_TagString
+      value: DosiMActif
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
@@ -4936,6 +5068,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: dosimetre_actif4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_TagString
+      value: DosiMActif
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
 --- !u!4 &1508334462 stripped
@@ -5055,6 +5195,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ba89a4757d6943e8b78f1ea1a732472, type: 3}
+--- !u!1 &1568151670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1568151672}
+  - component: {fileID: 1568151671}
+  m_Layer: 0
+  m_Name: ObjectsOriginalTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1568151671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568151670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd29037dc18ec4e3ca8ca88ff2bacb92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1568151672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568151670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7682092, y: 0.6854893, z: -1.1748441}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1582146267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5121,6 +5304,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
       propertyPath: m_Name
       value: dosimetre_passif2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
+      propertyPath: m_TagString
+      value: DosiMPassif
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c09a158866aedc42a15b64c08f153b8, type: 3}
@@ -6750,8 +6941,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4A_Cap
       objectReference: {fileID: 0}
+    - target: {fileID: 7591624187335098994, guid: ff7f5ea1c741e49ee8bf0c706e9d90a9, type: 3}
+      propertyPath: m_TagString
+      value: Casquette
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff7f5ea1c741e49ee8bf0c706e9d90a9, type: 3}
+--- !u!4 &1942236913 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7591624187334680146, guid: ff7f5ea1c741e49ee8bf0c706e9d90a9, type: 3}
+  m_PrefabInstance: {fileID: 1942236912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1942236914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7591624187335098994, guid: ff7f5ea1c741e49ee8bf0c706e9d90a9, type: 3}
+  m_PrefabInstance: {fileID: 1942236912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1942236915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942236914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 1942236913}
+  m_grabPoints: []
 --- !u!1001 &1957500537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6863,7 +7085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968023195580409390, guid: 06ee7a5c23ff54bd7b10293fce480dc5, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3968023195580409390, guid: 06ee7a5c23ff54bd7b10293fce480dc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7055,6 +7277,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f987c6fcd1f94fd2b421103e0503db0, type: 3}
+--- !u!4 &2000270161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8700377458491762306, guid: 4f987c6fcd1f94fd2b421103e0503db0, type: 3}
+  m_PrefabInstance: {fileID: 2000270160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2000270162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8700377458491275938, guid: 4f987c6fcd1f94fd2b421103e0503db0, type: 3}
+  m_PrefabInstance: {fileID: 2000270160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2000270163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000270162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 2000270161}
+  m_grabPoints: []
 --- !u!1 &2029399952
 GameObject:
   m_ObjectHideFlags: 0
@@ -7174,7 +7423,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 856815094955763552, guid: 5f2335b446c9541208e902fbb1b9e8a9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 856815094955763552, guid: 5f2335b446c9541208e902fbb1b9e8a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7292,6 +7541,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
       propertyPath: m_Name
       value: dosimetre_actif2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}
+      propertyPath: m_TagString
+      value: DosiMActif
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288e78324078be84380bc8b6ad046f8e, type: 3}

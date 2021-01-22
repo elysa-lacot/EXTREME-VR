@@ -28,8 +28,8 @@ namespace ExtremeVR
             try
             {
                 //DirectoryInfo dir = new DirectoryInfo("Assets/PFE/Resources/Scenario");
-                //DirectoryInfo dir = new DirectoryInfo("sdcard/scenario");
-                DirectoryInfo dir = new DirectoryInfo("/storage/emulated/0/Android/data/com.DefaultCompany.PFE/files/Assets/PFE/Resources/Scenario");
+                DirectoryInfo dir = new DirectoryInfo("/mnt/sdcard/scenario");
+                //DirectoryInfo dir = new DirectoryInfo("/storage/emulated/0/Android/data/com.DefaultCompany.PFE/files/Assets/PFE/Resources/Scenario");
                 //DirectoryInfo dir = new DirectoryInfo("/mnt/sdcard/Android/obb/com.DefaultCompany.PFE/Assets/PFE/Resources/Scenario");
                  FileInfo[] info = dir.GetFiles("*.txt");
                 scenarioFiles = new List<string>();

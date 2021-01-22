@@ -1,0 +1,66 @@
+\hypertarget{class_extreme_v_r_1_1_file_tools}{}\doxysection{Référence de la classe Extreme\+VR.\+File\+Tools}
+\label{class_extreme_v_r_1_1_file_tools}\index{ExtremeVR.FileTools@{ExtremeVR.FileTools}}
+
+
+Classe permettant de lire un script (fichier texte) et de retourner un objet \mbox{\hyperlink{class_extreme_v_r_1_1_scene}{Scene}} correspondant.  
+
+
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_extreme_v_r_1_1_scene}{Scene}} \mbox{\hyperlink{class_extreme_v_r_1_1_file_tools_a5de5180cffb7eaebcb7d421f70a0f02e}{Load\+Text\+File}} (String file)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{class_extreme_v_r_1_1_file_tools_abb1a52dcdcc255b7d06136842f2a557b}{FILE\+\_\+\+EXTENSION}} = \char`\"{}.txt\char`\"{}
+\item 
+const string \mbox{\hyperlink{class_extreme_v_r_1_1_file_tools_a29aa6f83747171145ae1cc9d732c34e4}{SCENE\+\_\+\+FOLDER}} = \char`\"{}/mnt/sdcard/scenario/\char`\"{}
+\item 
+static readonly List$<$ String $>$ \mbox{\hyperlink{class_extreme_v_r_1_1_file_tools_a03b8dbe2152d6104928144d0a7f4297a}{FUNCT\+\_\+\+NAME}} = new List$<$String$>$() \{\char`\"{}define\+:\char`\"{},\char`\"{}tasks\char`\"{},\char`\"{}when\char`\"{},\char`\"{}config\+:\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe permettant de lire un script (fichier texte) et de retourner un objet \mbox{\hyperlink{class_extreme_v_r_1_1_scene}{Scene}} correspondant. 
+
+\begin{DoxyAuthor}{Auteur}
+Sofiane Kerrakchou
+\end{DoxyAuthor}
+Note \+: Méthodes et attributs de classe uniquement ~\newline
+ Voir le manuel sur l\textquotesingle{}écriture de scripts ~\newline
+ \char`\"{}\+Instruction\char`\"{} correspond à ce que le simulateur doit faire, \char`\"{}\+Tâche\char`\"{} correspond à ce que l\textquotesingle{}utilisateur doit faire 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_extreme_v_r_1_1_file_tools_a5de5180cffb7eaebcb7d421f70a0f02e}\label{class_extreme_v_r_1_1_file_tools_a5de5180cffb7eaebcb7d421f70a0f02e}} 
+\index{ExtremeVR.FileTools@{ExtremeVR.FileTools}!LoadTextFile@{LoadTextFile}}
+\index{LoadTextFile@{LoadTextFile}!ExtremeVR.FileTools@{ExtremeVR.FileTools}}
+\doxysubsubsection{\texorpdfstring{LoadTextFile()}{LoadTextFile()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_extreme_v_r_1_1_scene}{Scene}} Extreme\+VR.\+File\+Tools.\+Load\+Text\+File (\begin{DoxyParamCaption}\item[{String}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Lit le script \char`\"{}file\char`\"{} et retourne un objet \mbox{\hyperlink{class_extreme_v_r_1_1_scene}{Scene}} correspondant 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_extreme_v_r_1_1_file_tools_abb1a52dcdcc255b7d06136842f2a557b}\label{class_extreme_v_r_1_1_file_tools_abb1a52dcdcc255b7d06136842f2a557b}} 
+\index{ExtremeVR.FileTools@{ExtremeVR.FileTools}!FILE\_EXTENSION@{FILE\_EXTENSION}}
+\index{FILE\_EXTENSION@{FILE\_EXTENSION}!ExtremeVR.FileTools@{ExtremeVR.FileTools}}
+\doxysubsubsection{\texorpdfstring{FILE\_EXTENSION}{FILE\_EXTENSION}}
+{\footnotesize\ttfamily const string Extreme\+VR.\+File\+Tools.\+FILE\+\_\+\+EXTENSION = \char`\"{}.txt\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Extension des fichier de script (texte) \mbox{\Hypertarget{class_extreme_v_r_1_1_file_tools_a03b8dbe2152d6104928144d0a7f4297a}\label{class_extreme_v_r_1_1_file_tools_a03b8dbe2152d6104928144d0a7f4297a}} 
+\index{ExtremeVR.FileTools@{ExtremeVR.FileTools}!FUNCT\_NAME@{FUNCT\_NAME}}
+\index{FUNCT\_NAME@{FUNCT\_NAME}!ExtremeVR.FileTools@{ExtremeVR.FileTools}}
+\doxysubsubsection{\texorpdfstring{FUNCT\_NAME}{FUNCT\_NAME}}
+{\footnotesize\ttfamily readonly List$<$String$>$ Extreme\+VR.\+File\+Tools.\+FUNCT\+\_\+\+NAME = new List$<$String$>$() \{\char`\"{}define\+:\char`\"{},\char`\"{}tasks\char`\"{},\char`\"{}when\char`\"{},\char`\"{}config\+:\char`\"{}\}\hspace{0.3cm}{\ttfamily [static]}}
+
+Liste constante contenant les noms des différents blocs dans les scripts \mbox{\Hypertarget{class_extreme_v_r_1_1_file_tools_a29aa6f83747171145ae1cc9d732c34e4}\label{class_extreme_v_r_1_1_file_tools_a29aa6f83747171145ae1cc9d732c34e4}} 
+\index{ExtremeVR.FileTools@{ExtremeVR.FileTools}!SCENE\_FOLDER@{SCENE\_FOLDER}}
+\index{SCENE\_FOLDER@{SCENE\_FOLDER}!ExtremeVR.FileTools@{ExtremeVR.FileTools}}
+\doxysubsubsection{\texorpdfstring{SCENE\_FOLDER}{SCENE\_FOLDER}}
+{\footnotesize\ttfamily const string Extreme\+VR.\+File\+Tools.\+SCENE\+\_\+\+FOLDER = \char`\"{}/mnt/sdcard/scenario/\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Dossier contenant les scripts 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+File\+Tools.\+cs\end{DoxyCompactItemize}

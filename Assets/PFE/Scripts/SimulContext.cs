@@ -16,24 +16,34 @@ namespace ExtremeVR
         void SetUserFreeze(bool isFrozen);
     }
 
+    /**
+    *  \class SimulContext
+    *  \author Sofiane Kerrakchou
+    *  \brief Classe représentant le contexte de la simulation
+    */
     class SimulContext : MonoBehaviour, ISimulContext
     {
-        // Start is called before the first frame update
         AudioSource _audiosource;
         public AudioClip _loot;
         public AudioClip _drop;
+        /** A SUPPRIMER APRES VERIFICATION */
         public Text notifText;
+        /** A SUPPRIMER APRES VERIFICATION */
         public Text inventoryListText;
         public UnityPrint printable;
+        /** A SUPPRIMER APRES VERIFICATION */
         public DropObjectsManager Dom;
+        /** A SUPPRIMER APRES VERIFICATION */
         public CameraMove camera;
         private Boolean _objectdropped = false;
+        /** A SUPPRIMER APRES VERIFICATION */
         private Dictionary<String,GameObject> _inactiveObjects;
         public bool IsSceneFunctionRunning { get { return _s.IsSceneFunctionRunning;}}
         public String ScenarioFile;
         private Scene _s = null;
         public Scene CurrentScene { get {return _s;}}
         private bool _isRunning = false;
+        /** Si vrai, le fichier indiqué dans ScenarioFile sera automatiquement chargé */
         public bool DebugMode = false;
         private List<string> _objInventory;
        
@@ -41,9 +51,6 @@ namespace ExtremeVR
 
         void Awake()
         {
-            //Debug.Log("Awake Method");
-            //LoadScene(ScenarioFile);
-            //Run();
             _audiosource = GetComponent<AudioSource>();
             printable = PlayerSingleton.GetInstance().GetComponentInChildren<UnityPrint>();
             printable.simul = this;
@@ -61,7 +68,6 @@ namespace ExtremeVR
             }
         }
 
-        // Update is called once per frame
         void Update()
         {
             if(_isRunning)
@@ -90,10 +96,7 @@ namespace ExtremeVR
             _isRunning = true;
             _objInventory = new List<string>();
             UpdateInventoryListText();
-            //printable = new UnityPrint();
-            //printable.notifText = this.notifText;
             _s.setPrintOutput(printable);
-            //s.addTakeObjectUnorderedTask("123");
             StartCoroutine(StartFirstTry());
             _isRunning = false;
         }
@@ -113,11 +116,8 @@ namespace ExtremeVR
                 UnityEngine.Debug.Log("ça passe le if");
                 _s.TakeObject(objTag);
                 _objInventory.Add(objName);
-                //_inactiveObjects.Add(objName,GameObject.Find(objName));
-                //GameObject.Find(objName).SetActive(false);
                 printable.PrintToUser(objName + " pris !",PrintType.WITH_TIMEOUT,3);
                 inventoryListText.text += objName + "\n";
-                //Dom.CreateNewObject(objName);
             }
         }
 
@@ -128,12 +128,9 @@ namespace ExtremeVR
             {
                 _audiosource.PlayOneShot(_drop, 0.5F);
                 UnityEngine.Debug.Log("nom: " + objName);
-                _s.DropObject(objTag);
+                if(!_s.DropObject(objTag))printable.PrintToUser(objName + " non trouvé !", PrintType.WITH_CONFIRMATION, 3);;
                 UnityEngine.Debug.Log(objName);
                 _objInventory.Remove(objName);
-            //GameObject.Find(name).SetActive(true);
-                //_inactiveObjects[objName].SetActive(true);
-                //_inactiveObjects.Remove(objName);
                 printable.PrintToUser(objName + " enlevé !", PrintType.WITH_TIMEOUT, 3);
                 _objectdropped = true;
             }
@@ -171,21 +168,11 @@ namespace ExtremeVR
 
         public Behaviour GetHaloComponent(String name)
         {
-            //GameObject.Find(name).SetActive(false);
             return (Behaviour)GameObject.Find(name).GetComponent("Halo");
         }
 
         public bool LoadScene(string file)
         {
-            /*_s = FileTools.LoadTextFile(file);
-            _s.SimulContext = this;
-            _objInventory = new List<string>();
-            _inactiveObjects = new Dictionary<string, GameObject>();
-            //printable = new UnityPrint();
-            //printable.notifText = this.notifText;
-            _s.setPrintOutput(printable);
-            //s.addTakeObjectUnorderedTask("123");
-            StartCoroutine(_s.FirstTry());*/
             SceneLoader.SceneToLoad = file;
             StartCoroutine(SceneLoader.LoadScene());
             return true;
@@ -204,9 +191,7 @@ namespace ExtremeVR
         {
             foreach (string s in _objInventory)
             {
-                Debug.Log("Inventory => " + s);
                 _inactiveObjects[s].SetActive(true);
-                //GameObject.Find(s).SetActive(true);
             }
             _objInventory.Clear();
             UpdateInventoryListText();
@@ -221,7 +206,7 @@ namespace ExtremeVR
             return true;
         }
 
-        //DO NOT USE (Use the printable attribute instead)
+        /** NE PAS UTILISER (Utilisez l'attribut printable à la place) */
         public void PrintNotif(string text)
         {
             notifText.text = text;

@@ -9,7 +9,10 @@ using System.Diagnostics;
 
 namespace ExtremeVR
 {
-
+    /**
+    *  \class DropObjectsManager 
+    *  \brief OBSOLETE, NE PAS UTILISER
+    */
     class DropObjectsManager : MonoBehaviour
     {
         public Camera MainCamera;

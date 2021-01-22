@@ -4,7 +4,11 @@ using UnityEngine;
 
 namespace ExtremeVR
 {
-
+    /**
+    *  \class IPrintable
+    *  \author Sofiane Kerrakchou
+    *  \brief Interface pour les classes permettant d'afficher du texte
+    */
     public interface IPrintable
     {
         void PrintToUser(string text, int type, double time = -1);

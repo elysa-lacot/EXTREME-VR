@@ -1,0 +1,175 @@
+\hypertarget{class_extreme_v_r_1_1_scene}{}\doxysection{Référence de la classe Extreme\+VR.\+Scene}
+\label{class_extreme_v_r_1_1_scene}\index{ExtremeVR.Scene@{ExtremeVR.Scene}}
+
+
+Classe représentant un scénario.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_extreme_v_r_1_1_scene_1_1_object_options}{Object\+Options}}
+\begin{DoxyCompactList}\small\item\em Classe contenant les options (d\textquotesingle{}affichages pour l\textquotesingle{}instant, peut être amenée à contenir d\textquotesingle{}autres informations) concernant les objets de la scène Unity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a708d88e88311f6550bcdeac3680eb19e}\label{class_extreme_v_r_1_1_scene_a708d88e88311f6550bcdeac3680eb19e}} 
+void {\bfseries set\+Print\+Output} (\mbox{\hyperlink{interface_extreme_v_r_1_1_i_printable}{IPrintable}} p)
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_aaebac02a56303ee2fbb0e0b513fbf7ac}\label{class_extreme_v_r_1_1_scene_aaebac02a56303ee2fbb0e0b513fbf7ac}} 
+void {\bfseries Add\+Instruction\+To\+First\+Try} (\mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}} i)
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_aeba2f9956e456f0e2ee9edaba1012903}\label{class_extreme_v_r_1_1_scene_aeba2f9956e456f0e2ee9edaba1012903}} 
+void {\bfseries Add\+Instruction\+To\+Start} (\mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}} i)
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_af6fa241f1ac257f8b959ba9e9995d673}\label{class_extreme_v_r_1_1_scene_af6fa241f1ac257f8b959ba9e9995d673}} 
+void {\bfseries Add\+Obj\+Options} (String name, bool is\+Shown, int type)
+\item 
+IEnumerator$<$ Wait\+Until $>$ \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a04e4e1ad84e3e9d846c9e08c4f9c4427}{First\+Try}} ()
+\item 
+IEnumerator$<$ Wait\+Until $>$ \mbox{\hyperlink{class_extreme_v_r_1_1_scene_adb18155fa470aa3dd800e6305b65c9c9}{At\+Start}} ()
+\item 
+void \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a96bcde19ae2782ca93ef59a3e352c815}{Restart}} ()
+\item 
+void \mbox{\hyperlink{class_extreme_v_r_1_1_scene_af9a78c859292c37c6b6a0ca564cf8abf}{add\+Take\+Object\+Unordered\+Task}} (String obj\+ID)
+\item 
+void \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a1401e708b4eadb6566e7df54132c4ca0}{add\+Take\+Object\+Ordered\+Task}} (String obj\+ID)
+\item 
+Boolean \mbox{\hyperlink{class_extreme_v_r_1_1_scene_adb6d8f6b25791273408456789e6268a1}{Take\+Object}} (String obj\+ID)
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a9b6d66fc70dd6778c57e00d676bc3cab}\label{class_extreme_v_r_1_1_scene_a9b6d66fc70dd6778c57e00d676bc3cab}} 
+Boolean {\bfseries Drop\+Object} (String obj\+ID)
+\item 
+IEnumerator$<$ IEnumerator$<$ Wait\+Until $>$ $>$ \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a91f8a005bc5053de3eb3bcbc767968b5}{Check\+Tasks}} ()
+\item 
+void \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a1d949818fa8023b66b9e9d5bd11d47f5}{Add\+Instruction\+To\+Success}} (\mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}} i)
+\item 
+void \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a0f0173e89c90d0deb0633062a9ecb96f}{Add\+Instruction\+To\+Fail}} (\mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}} i)
+\item 
+bool \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a9fc3b46274711133cc1a0322c26611ad}{Change\+Scene}} (string file)
+\item 
+void \mbox{\hyperlink{class_extreme_v_r_1_1_scene_a5196995920c70e67cfead4a13c1d27d5}{Check\+Box}} (string message, List$<$ string $>$ options, Dictionary$<$ List$<$ int $>$, List$<$ \mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}} $>$$>$ inst, bool is\+Strict=false)
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a89eedc0001defd980079297d7dcfb9cc}\label{class_extreme_v_r_1_1_scene_a89eedc0001defd980079297d7dcfb9cc}} 
+void {\bfseries Set\+User\+Freeze} (bool is\+Frozen)
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_abcd38b1ca1bd529904e4c349b88a1725}\label{class_extreme_v_r_1_1_scene_abcd38b1ca1bd529904e4c349b88a1725}} 
+void {\bfseries Wait\+For\+User\+Input} ()
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a11cb3494ec19e7e8c019cecd5620e92e}\label{class_extreme_v_r_1_1_scene_a11cb3494ec19e7e8c019cecd5620e92e}} 
+void {\bfseries Signal\+User\+Input} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_ac75d2ae2a22a561539f0191b85aefb91}\label{class_extreme_v_r_1_1_scene_ac75d2ae2a22a561539f0191b85aefb91}} 
+bool {\bfseries Is\+Take\+Object\+Strict}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_extreme_v_r_1_1_scene_abd545b54e55526dc8fe6776d5d062907}{Wait\+For\+Validation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a8d62b5452f1a1cee644c766f7cd4b02e}\label{class_extreme_v_r_1_1_scene_a8d62b5452f1a1cee644c766f7cd4b02e}} 
+\mbox{\hyperlink{interface_extreme_v_r_1_1_i_printable}{IPrintable}} {\bfseries Print\+Output}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_aad487e1e0fda8701acdf07885e629170}\label{class_extreme_v_r_1_1_scene_aad487e1e0fda8701acdf07885e629170}} 
+\mbox{\hyperlink{interface_extreme_v_r_1_1_i_simul_context}{ISimul\+Context}} {\bfseries Simul\+Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a2d0540af02c400de3bd8b054769c5818}\label{class_extreme_v_r_1_1_scene_a2d0540af02c400de3bd8b054769c5818}} 
+bool {\bfseries Is\+Scene\+Function\+Running}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_aac35a90c8381fe0b67f7342d342b263e}\label{class_extreme_v_r_1_1_scene_aac35a90c8381fe0b67f7342d342b263e}} 
+String {\bfseries Unity\+Scene}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_ac39382632abb8c54415b649c52a3a05b}\label{class_extreme_v_r_1_1_scene_ac39382632abb8c54415b649c52a3a05b}} 
+List$<$ \mbox{\hyperlink{class_extreme_v_r_1_1_scene_1_1_object_options}{Object\+Options}} $>$ {\bfseries Obj\+Options}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe représentant un scénario. 
+
+\begin{DoxyAuthor}{Auteur}
+Sofiane Kerrakchou 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a0f0173e89c90d0deb0633062a9ecb96f}\label{class_extreme_v_r_1_1_scene_a0f0173e89c90d0deb0633062a9ecb96f}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!AddInstructionToFail@{AddInstructionToFail}}
+\index{AddInstructionToFail@{AddInstructionToFail}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{AddInstructionToFail()}{AddInstructionToFail()}}
+{\footnotesize\ttfamily void Extreme\+VR.\+Scene.\+Add\+Instruction\+To\+Fail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}}}]{i }\end{DoxyParamCaption})}
+
+Ajoute une instruction au bloc fail \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a1d949818fa8023b66b9e9d5bd11d47f5}\label{class_extreme_v_r_1_1_scene_a1d949818fa8023b66b9e9d5bd11d47f5}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!AddInstructionToSuccess@{AddInstructionToSuccess}}
+\index{AddInstructionToSuccess@{AddInstructionToSuccess}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{AddInstructionToSuccess()}{AddInstructionToSuccess()}}
+{\footnotesize\ttfamily void Extreme\+VR.\+Scene.\+Add\+Instruction\+To\+Success (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}}}]{i }\end{DoxyParamCaption})}
+
+Ajoute une instruction au bloc success \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a1401e708b4eadb6566e7df54132c4ca0}\label{class_extreme_v_r_1_1_scene_a1401e708b4eadb6566e7df54132c4ca0}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!addTakeObjectOrderedTask@{addTakeObjectOrderedTask}}
+\index{addTakeObjectOrderedTask@{addTakeObjectOrderedTask}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{addTakeObjectOrderedTask()}{addTakeObjectOrderedTask()}}
+{\footnotesize\ttfamily void Extreme\+VR.\+Scene.\+add\+Take\+Object\+Ordered\+Task (\begin{DoxyParamCaption}\item[{String}]{obj\+ID }\end{DoxyParamCaption})}
+
+Ajoute une tâche \char`\"{}task\char`\"{} dans la liste des tâches avec un ordre à respecter \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_af9a78c859292c37c6b6a0ca564cf8abf}\label{class_extreme_v_r_1_1_scene_af9a78c859292c37c6b6a0ca564cf8abf}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!addTakeObjectUnorderedTask@{addTakeObjectUnorderedTask}}
+\index{addTakeObjectUnorderedTask@{addTakeObjectUnorderedTask}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{addTakeObjectUnorderedTask()}{addTakeObjectUnorderedTask()}}
+{\footnotesize\ttfamily void Extreme\+VR.\+Scene.\+add\+Take\+Object\+Unordered\+Task (\begin{DoxyParamCaption}\item[{String}]{obj\+ID }\end{DoxyParamCaption})}
+
+Ajoute une tâche \char`\"{}task\char`\"{} dans la liste des tâches sans ordre à respecter \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_adb18155fa470aa3dd800e6305b65c9c9}\label{class_extreme_v_r_1_1_scene_adb18155fa470aa3dd800e6305b65c9c9}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!AtStart@{AtStart}}
+\index{AtStart@{AtStart}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{AtStart()}{AtStart()}}
+{\footnotesize\ttfamily IEnumerator$<$Wait\+Until$>$ Extreme\+VR.\+Scene.\+At\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Coroutine exécutant les instructions du bloc start \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a9fc3b46274711133cc1a0322c26611ad}\label{class_extreme_v_r_1_1_scene_a9fc3b46274711133cc1a0322c26611ad}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!ChangeScene@{ChangeScene}}
+\index{ChangeScene@{ChangeScene}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{ChangeScene()}{ChangeScene()}}
+{\footnotesize\ttfamily bool Extreme\+VR.\+Scene.\+Change\+Scene (\begin{DoxyParamCaption}\item[{string}]{file }\end{DoxyParamCaption})}
+
+Charge un nouveau scénario \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a5196995920c70e67cfead4a13c1d27d5}\label{class_extreme_v_r_1_1_scene_a5196995920c70e67cfead4a13c1d27d5}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!CheckBox@{CheckBox}}
+\index{CheckBox@{CheckBox}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{CheckBox()}{CheckBox()}}
+{\footnotesize\ttfamily void Extreme\+VR.\+Scene.\+Check\+Box (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{List$<$ string $>$}]{options,  }\item[{Dictionary$<$ List$<$ int $>$, List$<$ \mbox{\hyperlink{class_extreme_v_r_1_1_instruction}{Instruction}} $>$$>$}]{inst,  }\item[{bool}]{is\+Strict = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Les instructions checkbox ne sont pas entièrement implémentés \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a91f8a005bc5053de3eb3bcbc767968b5}\label{class_extreme_v_r_1_1_scene_a91f8a005bc5053de3eb3bcbc767968b5}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!CheckTasks@{CheckTasks}}
+\index{CheckTasks@{CheckTasks}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{CheckTasks()}{CheckTasks()}}
+{\footnotesize\ttfamily IEnumerator$<$IEnumerator$<$Wait\+Until$>$ $>$ Extreme\+VR.\+Scene.\+Check\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Coroutine vérifiant si les tâches ont été effectuées et exéctute les instructions du bloc success ou fail selon la situation \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a04e4e1ad84e3e9d846c9e08c4f9c4427}\label{class_extreme_v_r_1_1_scene_a04e4e1ad84e3e9d846c9e08c4f9c4427}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!FirstTry@{FirstTry}}
+\index{FirstTry@{FirstTry}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{FirstTry()}{FirstTry()}}
+{\footnotesize\ttfamily IEnumerator$<$Wait\+Until$>$ Extreme\+VR.\+Scene.\+First\+Try (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Coroutine exécutant les instructions du bloc firsttry \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_a96bcde19ae2782ca93ef59a3e352c815}\label{class_extreme_v_r_1_1_scene_a96bcde19ae2782ca93ef59a3e352c815}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!Restart@{Restart}}
+\index{Restart@{Restart}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{Restart()}{Restart()}}
+{\footnotesize\ttfamily void Extreme\+VR.\+Scene.\+Restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Redémarre le scénario \mbox{\Hypertarget{class_extreme_v_r_1_1_scene_adb6d8f6b25791273408456789e6268a1}\label{class_extreme_v_r_1_1_scene_adb6d8f6b25791273408456789e6268a1}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!TakeObject@{TakeObject}}
+\index{TakeObject@{TakeObject}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{TakeObject()}{TakeObject()}}
+{\footnotesize\ttfamily Boolean Extreme\+VR.\+Scene.\+Take\+Object (\begin{DoxyParamCaption}\item[{String}]{obj\+ID }\end{DoxyParamCaption})}
+
+Ajoute un objet avec l\textquotesingle{}identifiant obj\+ID à la liste des objets pris 
+
+\doxysubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_extreme_v_r_1_1_scene_abd545b54e55526dc8fe6776d5d062907}\label{class_extreme_v_r_1_1_scene_abd545b54e55526dc8fe6776d5d062907}} 
+\index{ExtremeVR.Scene@{ExtremeVR.Scene}!WaitForValidation@{WaitForValidation}}
+\index{WaitForValidation@{WaitForValidation}!ExtremeVR.Scene@{ExtremeVR.Scene}}
+\doxysubsubsection{\texorpdfstring{WaitForValidation}{WaitForValidation}}
+{\footnotesize\ttfamily bool Extreme\+VR.\+Scene.\+Wait\+For\+Validation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Si vrai, la simulation attend que l\textquotesingle{}utilisateur vérifie manuellement si les tâches ont été effectuées 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+Scene.\+cs\end{DoxyCompactItemize}

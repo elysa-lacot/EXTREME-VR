@@ -1,4 +1,3 @@
-
 define:
     $masque = 1
     $cartouche = 2
@@ -36,10 +35,10 @@ tasks without order:
 
 when success:
     freeze user
-    print "Choix d'équipement correcte !" for 3s
+    print "Choix d'équipement correct !" for 3s
     load scene01c
 
 when fail:
     freeze user
-    print "Choix d'équipement incorrecte !" for 3s
+    print "Choix d'équipement incorrect !" for 3s
     restart

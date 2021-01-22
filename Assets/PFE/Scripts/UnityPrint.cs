@@ -7,13 +7,21 @@ using System.Linq;
 
 namespace ExtremeVR
 {
-
+    /**
+    *  \class UnityPrint
+    *  \author Sofiane Kerrakchou
+    *  \brief Classe permettant d'afficher du texte (avec confirmation de l'utilisateur ou à durée limitée) 
+    */
     class UnityPrint : MonoBehaviour, IPrintable
     {
+        /** Texte à durée limitée */
         public TextMeshProUGUI notifText;
+        /** Texte avec confirmation de l'utilisateur */
         public TextMeshProUGUI confirmationText;
+        /** Temps restant pour le texte à durée limitée */
         public double remainingTime;
-        public Camera MainCamera;
+        //public Camera MainCamera;
+        /** Vrai si un texte avec confirmation est affiché */
         private bool isWaitingText = false;
         public SimulContext simul= null;
         //For checkbox
@@ -50,9 +58,8 @@ namespace ExtremeVR
             if((type & PrintType.WITH_CONFIRMATION) == PrintType.WITH_CONFIRMATION)
             {
                 Debug.Log(text + "\nPress Enter to continue");
-                if(confirmationText != null) confirmationText.text = text + "\nPress Enter to continue";
+                if(confirmationText != null) confirmationText.text = text + "\nAppuyez sur A pour continuer";
                 else Debug.Log("NotifText = null !");
-                //Console.ReadKey();
                 Debug.Log("Confirmation");
             }
             else if((type & PrintType.WITH_TIMEOUT) == PrintType.WITH_TIMEOUT)
@@ -65,12 +72,12 @@ namespace ExtremeVR
                     isWaitingText = true;
                 }
                 else Debug.Log("NotifText = null !");
-                //Thread.Sleep((int)time * 1000);
                 Debug.Log("Wait for " + remainingTime);
             }
             else Debug.Log("PrintToUser : Unknown type");
         }
 
+        /** AFFICHAGE DES CHECKBOX NON FONCTIONNELLE */
         public List<int> CheckboxToUser(string message,List<string> choices)
         {
             Debug.Log("CHKBOX");
@@ -113,11 +120,13 @@ namespace ExtremeVR
             return null;
         }
         
+        /** AFFICHAGE DES CHECKBOX NON FONCTIONNELLE */
         public List<int> GetCheckboxAnswers()
         {
             return null;
         }
 
+        /** AFFICHAGE DES CHECKBOX NON FONCTIONNELLE */
         private void _addCheckboxChoice(string choice)
         {
             int _policysize = 30;

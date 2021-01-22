@@ -7,7 +7,10 @@ using UnityEngine.UI;
 
 namespace ExtremeVR
 {
-
+    /**
+    *  \class SelectionManager 
+    *  \brief OBSOLETE, NE PAS UTILISER
+    */
     class SelectionManager : MonoBehaviour
     {
         // Start is called before the first frame update

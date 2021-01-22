@@ -7,7 +7,12 @@ using ExtremeVR;
 
 namespace ExtremeVR
 {
-
+    /**
+    *  \class Instruction 
+    *  \author Sofiane Kerrakchou
+    *  \brief Classe abstraite instruction (design pattern Command), contient les constantes représentants les différents types d'instructions 
+    *  
+    */
     abstract class Instruction
     {
         public const int PRINT_INST = 1;
@@ -24,11 +29,24 @@ namespace ExtremeVR
 
         public abstract void Execute(Scene s);
     }
+
+    /**
+    *  \class PrintInst
+    *  \author Sofiane Kerrakchou
+    *  \brief Instruction d'affichage (print)
+    *  
+    */
     class PrintInst : Instruction
     {
         private string _text;
+        /** Prend une valeur parmi celles de la classe PrintType (dans le fichier IPrintable.cs) */
         private int _printType;
         private double _time;
+        /** Constructeur
+        * \param text Texte à afficher
+        * \param type Valeur parmi celles de la classe PrintType, indique le type de message (durée limitée ou avec confirmation de l'utilisateur) 
+        * \param time Durée d'affichage en secondes (-1 si message sans limite de temps )
+        */
         public PrintInst(String text, int type, double time = -1)
         {
             _type = Instruction.PRINT_INST;
@@ -95,6 +113,7 @@ namespace ExtremeVR
         }
     }
 
+    /** Instruction permettant d'empêcher le mouvement de l'utilisateur de bouger. N'est pas implémenté pour le casque, a surtout été utilisé lors des premiers tests */
     class FreezeUserInst : Instruction
     {
         private bool _isFrozen;
